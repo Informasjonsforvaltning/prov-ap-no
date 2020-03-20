@@ -1,4 +1,4 @@
-# Ontology related to PROV-AP-NO (Norwegian Application Profile of PROV-O)
+# Ontology for PROV-AP-NO (Norwegian Application Profile of PROV-O)
 
 prov-ap-no-turtle.ttl: PROV-AP-NO (comming, when needed Norwegian extensions)
 
