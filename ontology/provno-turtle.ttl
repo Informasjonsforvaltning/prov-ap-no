@@ -10,13 +10,15 @@
 @base <https://data.norge.no/vocabulary/provno#> .
 
 <https://data.norge.no/vocabulary/provno#> rdf:type owl:Ontology ;
-                                            owl:versionIRI <provno:0.1> ;
+                                            owl:versionIRI <provno:0.2> ;
                                             rdfs:comment "Controlled vocabulary used in/with PROV-AP-NO (Norwegian Application Profile of PROV-O)"@en ,
                                                          "Kontrollert vokabular brukt i/ifm. PROV-AP-NO (norsk applikasjonspofil av PROV-O)"@nb ;
                                             rdfs:isDefinedBy "Digitaliseringsdirektoratet"@nb ,
                                                              "Norwegian Digitalisation Agency"@en ;
                                             rdfs:label "provno"@en ,
-                                                       "provno"@nb .
+                                                       "provno"@nb ;
+                                            owl:versionInfo "Changes: Correcting typo"@en ,
+                                                            "Endringer: Korrigering av skrivefeil"@nb .
 
 #################################################################
 #    Annotation properties
@@ -60,7 +62,7 @@ prov:Activity rdf:type owl:Class .
                         skos:definition "avgjørelse som treffes under utøving av offentlig myndighet og som generelt eller konkret er bestemmende for rettigheter eller plikter til private personer (enkeltpersoner eller andre private rettssubjekter)"@nb ,
                                         "decision made in the exercise of public authority which generally or specifically determines the rights or duties of private persons (individual persons or other private legal persons)"@en ;
                         skos:example "<skatteoppgjør> a dcat:Dataset; aprov:wasGeneratedBy provno:administrativeDecision ."@en ,
-                                     "<skatteoppgjør> a dcat:Dataset; prov:wasGeneratedBy provno:administrativeDecision ."@no ,
+                                     "<skatteoppgjør> a dcat:Dataset; prov:wasGeneratedBy provno:administrativeDecision ."@nb ,
                                      "vedtak om skatteoppgjør"@nb ;
                         skos:prefLabel "administrative decision"@en ,
                                        "vedtak"@nb .
@@ -72,14 +74,14 @@ prov:Activity rdf:type owl:Class .
                           skos:definition "collecting relevant information from a third party"@en ,
                                           "innhenting av relevante opplysninger fra en tredjepart"@nb ;
                           skos:example "<preutfyltSkattemelding> a dcat:Dataset; prov:wasGeneratedBy provno:collectingFromThirdParty ."@en ,
-                                       "<preutfyltSkattemelding> a dcat:Dataset; prov:wasGeneratedBy provno:collectingFromThirdParty ."@no ,
+                                       "<preutfyltSkattemelding> a dcat:Dataset; prov:wasGeneratedBy provno:collectingFromThirdParty ."@nb ,
                                        "innhending av data fra tredjepart ved preutfylling av en skattemelding"@nb ;
                           skos:prefLabel "collecting from third party"@en ,
                                          "innhenting fra tredjepart"@nb .
 
 
-###  https://data.norge.no/vocabulary/provno#collectionFromUser
-:collectionFromUser rdf:type owl:NamedIndividual ,
+###  https://data.norge.no/vocabulary/provno#collectingFromUser
+:collectingFromUser rdf:type owl:NamedIndividual ,
                              prov:Activity ;
                     skos:definition "collecting relevant information from the user"@en ,
                                     "innhenting av relevante opplysninger fra brukeren"@nb ;
