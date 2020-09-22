@@ -10,15 +10,15 @@
 @base <https://data.norge.no/vocabulary/provno#> .
 
 <https://data.norge.no/vocabulary/provno#> rdf:type owl:Ontology ;
-                                            owl:versionIRI <provno:0.2> ;
+                                            owl:versionIRI <provno:0.3> ;
                                             rdfs:comment "Controlled vocabulary used in/with PROV-AP-NO (Norwegian Application Profile of PROV-O)"@en ,
                                                          "Kontrollert vokabular brukt i/ifm. PROV-AP-NO (norsk applikasjonspofil av PROV-O)"@nb ;
                                             rdfs:isDefinedBy "Digitaliseringsdirektoratet"@nb ,
                                                              "Norwegian Digitalisation Agency"@en ;
                                             rdfs:label "provno"@en ,
                                                        "provno"@nb ;
-                                            owl:versionInfo "Changes: Correcting typo"@en ,
-                                                            "Endringer: Korrigering av skrivefeil"@nb .
+                                            owl:versionInfo "V0.3: Some editorial adjustments"@en ,
+                                                            "V0.3: Noen redaksjonelle justeringer."@nb .
 
 #################################################################
 #    Annotation properties
@@ -45,7 +45,8 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  http://www.w3.org/ns/prov#Activity
-prov:Activity rdf:type owl:Class .
+prov:Activity rdf:type owl:Class ;
+              rdfs:isDefinedBy "https://www.w3.org/TR/prov-o/#Activity"@en .
 
 
 #################################################################
@@ -61,8 +62,7 @@ prov:Activity rdf:type owl:Class .
                                      "https://lovdata.no/lov/1967-02-10/§2"@nb ;
                         skos:definition "avgjørelse som treffes under utøving av offentlig myndighet og som generelt eller konkret er bestemmende for rettigheter eller plikter til private personer (enkeltpersoner eller andre private rettssubjekter)"@nb ,
                                         "decision made in the exercise of public authority which generally or specifically determines the rights or duties of private persons (individual persons or other private legal persons)"@en ;
-                        skos:example "<skatteoppgjør> a dcat:Dataset; aprov:wasGeneratedBy provno:administrativeDecision ."@en ,
-                                     "<skatteoppgjør> a dcat:Dataset; prov:wasGeneratedBy provno:administrativeDecision ."@nb ,
+                        skos:example "<skatteoppgjør> a dcat:Dataset; aprov:wasGeneratedBy provno:administrativeDecision ." ,
                                      "vedtak om skatteoppgjør"@nb ;
                         skos:prefLabel "administrative decision"@en ,
                                        "vedtak"@nb .
@@ -73,8 +73,7 @@ prov:Activity rdf:type owl:Class .
                                    prov:Activity ;
                           skos:definition "collecting relevant information from a third party"@en ,
                                           "innhenting av relevante opplysninger fra en tredjepart"@nb ;
-                          skos:example "<preutfyltSkattemelding> a dcat:Dataset; prov:wasGeneratedBy provno:collectingFromThirdParty ."@en ,
-                                       "<preutfyltSkattemelding> a dcat:Dataset; prov:wasGeneratedBy provno:collectingFromThirdParty ."@nb ,
+                          skos:example "<preutfyltSkattemelding> a dcat:Dataset; prov:wasGeneratedBy provno:collectingFromThirdParty ." ,
                                        "innhending av data fra tredjepart ved preutfylling av en skattemelding"@nb ;
                           skos:prefLabel "collecting from third party"@en ,
                                          "innhenting fra tredjepart"@nb .
@@ -85,8 +84,7 @@ prov:Activity rdf:type owl:Class .
                              prov:Activity ;
                     skos:definition "collecting relevant information from the user"@en ,
                                     "innhenting av relevante opplysninger fra brukeren"@nb ;
-                    skos:example "<korrigertSkattemelding> a dcat:Dataset; prov:wasGeneratedBy provno:collectingFromUser ."@en ,
-                                 "<korrigertSkattemelding> a dcat:Dataset; prov:wasGeneratedBy provno:collectingFromUser ."@nb ,
+                    skos:example "<korrigertSkattemelding> a dcat:Dataset; prov:wasGeneratedBy provno:collectingFromUser ." ,
                                  "endring utført av skatteyteren i den preutfylte skattemeldingen"@nb ;
                     skos:prefLabel "collecting from the user"@en ,
                                    "innhenting fra bruker"@nb .
