@@ -2,6 +2,8 @@
 
 prov-ap-no-turtle.ttl: PROV-AP-NO (comming, when needed Norwegian extensions)
 
-provno-turtle.ttl: Controlled vocabulary used with PROV-AP-NO
+provno.ttl: Controlled vocabulary used with PROV-AP-NO
+
+Link to published vocabulary: https://data.norge.no/vocabulary/provno
 
 \- _Norwegian Digitalisation Agency / Digitaliseringsdirektoratet_ (https://digdir.no)
