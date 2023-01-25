@@ -1,49 +1,25 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title></title>
-    <meta name="generator" content="LibreOffice 7.4.1.2 (Linux)" />
-    <meta name="created" content="00:00:00" />
-    <meta name="changed" content="00:00:00" />
-    <style type="text/css">
-        @page {
-            size: 8.27in 11.69in;
-            margin: 0.79in
-        }
-
-        p {
-            line-height: 115%;
-            margin-bottom: 0.1in;
-            background: transparent
-        }
-
-        pre {
-            background: transparent
-        }
-
-        pre.western {
-            font-family: "Liberation Mono", monospace;
-            font-size: 10pt
-        }
-
-        pre.cjk {
-            font-family: "Noto Sans Mono CJK SC", monospace;
-            font-size: 10pt
-        }
-
-        pre.ctl {
-            font-family: "Liberation Mono", monospace;
-            font-size: 10pt
-        }
-
-    </style>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.3.0.3 (Windows)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
 </head>
-
-<body lang="en-US" link="#000080" vlink="#800000" dir="ltr">
-    <pre class="western">@prefix : &lt;https://data.norge.no/vocabulary/provno#&gt; .
+<body lang="nb-NO" link="#000080" vlink="#800000" dir="ltr"><pre class="western">@prefix : &lt;https://data.norge.no/vocabulary/provno#&gt; .
+@prefix adms: &lt;http://www.w3.org/ns/adms#&gt; .
+@prefix dcat: &lt;http://www.w3.org/ns/dcat#&gt; .
 @prefix dct: &lt;http://purl.org/dc/terms/&gt; .
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
 @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix xml: &lt;http://www.w3.org/XML/1998/namespace&gt; .
@@ -53,61 +29,51 @@
 @prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
 @base &lt;https://data.norge.no/vocabulary/provno#&gt; .
 
+#### about this ontology
+
 &lt;https://data.norge.no/vocabulary/provno#&gt; rdf:type owl:Ontology ;
-                                            owl:versionIRI &lt;provno:0.3&gt; ;
-                                            rdfs:comment &quot;Controlled vocabulary used in/with PROV-AP-NO (Norwegian Application Profile of PROV-O)&quot;@en ,
-                                                         &quot;Kontrollert vokabular brukt i/ifm. PROV-AP-NO (norsk applikasjonspofil av PROV-O)&quot;@nb ;
-                                            rdfs:isDefinedBy &quot;Digitaliseringsdirektoratet&quot;@nb ,
-                                                             &quot;Norwegian Digitalisation Agency&quot;@en ;
-                                            rdfs:label &quot;provno&quot;@en ,
-                                                       &quot;provno&quot;@nb ;
-                                            owl:versionInfo &quot;V0.3: Some editorial adjustments&quot;@en ,
-                                                            &quot;V0.3: Noen redaksjonelle justeringer.&quot;@nb .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://purl.org/dc/terms/source
-dct:source rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#definition
-skos:definition rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#example
-skos:example rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#prefLabel
-skos:prefLabel rdf:type owl:AnnotationProperty .
+   dcat:accessURL &lt;https://github.com/Informasjonsforvaltning/prov-ap-no/tree/develop/ontology&gt;;
+   dcat:downloadURL &lt;https://data.norge.no/vocabulary/provno.ttl&gt; ;
+   adms:status &lt;http://purl.org/adms/status/UnderDevelopment&gt; ;
+   dct:format &lt;http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE&gt; ;
+   dct:creator [
+      foaf:homepage &lt;https://www.digdir.no/&gt; ;
+      foaf:name &quot;Digitaliseringsdirektoratet&quot;@nb , &quot;Norwegian Digitalisation Agency&quot;@en ;
+   ];
+   dct:license &lt;http://publications.europa.eu/resource/authority/licence/CC_BY_4_0&gt; ;
+   dct:publisher &lt;https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827&gt; ;
+   dct:description &quot;This is the ontology for PROV-AP-NO.&quot;@en ;
+   dct:title &quot;Ontology for PROV-AP-NO&quot;@en , &quot;Ontologi for PROV-AP-NO&quot;@nb ;
+   dct:modified &quot;2023-01-26&quot;^^xsd:date ;
+    owl:versionInfo &quot;0.4&quot; ;
+    owl:versionNotes &quot;All named individuals are marked as deprecated, with referances to the new URIs.&quot;@en ,
+      &quot;Alle named individuals er markert som frar&aring;dd &aring; bruke, med referanser til nye URIer.&quot;@nb ;
+    foaf:homepage &lt;https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/ontology/&gt; ;
+    foaf:maker [
+        foaf:mbox &lt;mailto:informasjonsforvaltning@digdir.no&gt; ;
+        foaf:name &quot;Informasjonsforvaltning, Digitaliseringsdirektoratet&quot;@nb ;
+        foaf:page &lt;https://www.digdir.no&gt; ;
+        ] ;
+   .
 
 
 #################################################################
-#    Classes
-#################################################################
-
-###  http://www.w3.org/ns/prov#Activity
-prov:Activity rdf:type owl:Class ;
-              rdfs:isDefinedBy &quot;https://www.w3.org/TR/prov-o/#Activity&quot;@en .
-
-
-#################################################################
-#    Individuals
+#    The following named individuals are all deprecated
 #################################################################
 
 ###  https://data.norge.no/vocabulary/provno#administrativeDecision
 :administrativeDecision rdf:type owl:NamedIndividual ,
                                  prov:Activity ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
+  dct:isReplacedBy &lt;https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision&gt; ;
                         dct:source &quot;Act relating to procedure in cases concerning the public administration (Public Administration Act)&quot;@en ,
-                                   &quot;Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)&quot;@nb ;
-                        rdfs:seeAlso &quot;https://lovdata.no/NLE/lov/1967-02-10/§section2&quot;@en ,
-                                     &quot;https://lovdata.no/lov/1967-02-10/§2&quot;@nb ;
-                        skos:definition &quot;avgjørelse som treffes under utøving av offentlig myndighet og som generelt eller konkret er bestemmende for rettigheter eller plikter til private personer (enkeltpersoner eller andre private rettssubjekter)&quot;@nb ,
+                                   &quot;Lov om behandlingsm&aring;ten i forvaltningssaker (forvaltningsloven)&quot;@nb ;
+                        rdfs:seeAlso &quot;https://lovdata.no/NLE/lov/1967-02-10/&sect;section2&quot;@en ,
+                                     &quot;https://lovdata.no/lov/1967-02-10/&sect;2&quot;@nb ;
+                        skos:definition &quot;avgj&oslash;relse som treffes under ut&oslash;ving av offentlig myndighet og som generelt eller konkret er bestemmende for rettigheter eller plikter til private personer (enkeltpersoner eller andre private rettssubjekter)&quot;@nb ,
                                         &quot;decision made in the exercise of public authority which generally or specifically determines the rights or duties of private persons (individual persons or other private legal persons)&quot;@en ;
-                        skos:example &quot;&lt;skatteoppgjør&gt; a dcat:Dataset; aprov:wasGeneratedBy provno:administrativeDecision .&quot; ,
-                                     &quot;vedtak om skatteoppgjør&quot;@nb ;
+                        skos:example &quot;&lt;skatteoppgj&oslash;r&gt; a dcat:Dataset; aprov:wasGeneratedBy provno:administrativeDecision .&quot; ,
+                                     &quot;vedtak om skatteoppgj&oslash;r&quot;@nb ;
                         skos:prefLabel &quot;administrative decision&quot;@en ,
                                        &quot;vedtak&quot;@nb .
 
@@ -115,6 +81,8 @@ prov:Activity rdf:type owl:Class ;
 ###  https://data.norge.no/vocabulary/provno#collectingFromThirdParty
 :collectingFromThirdParty rdf:type owl:NamedIndividual ,
                                    prov:Activity ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
+  dct:isReplacedBy &lt;https://data.norge.no/vocabulary/provenance-activity-type#collecting-from-third-party&gt; ;
                           skos:definition &quot;collecting relevant information from a third party&quot;@en ,
                                           &quot;innhenting av relevante opplysninger fra en tredjepart&quot;@nb ;
                           skos:example &quot;&lt;preutfyltSkattemelding&gt; a dcat:Dataset; prov:wasGeneratedBy provno:collectingFromThirdParty .&quot; ,
@@ -126,15 +94,13 @@ prov:Activity rdf:type owl:Class ;
 ###  https://data.norge.no/vocabulary/provno#collectingFromUser
 :collectingFromUser rdf:type owl:NamedIndividual ,
                              prov:Activity ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
+  dct:isReplacedBy &lt;https://data.norge.no/vocabulary/provenance-activity-type#collecting-from-user&gt; ;
                     skos:definition &quot;collecting relevant information from the user&quot;@en ,
                                     &quot;innhenting av relevante opplysninger fra brukeren&quot;@nb ;
                     skos:example &quot;&lt;korrigertSkattemelding&gt; a dcat:Dataset; prov:wasGeneratedBy provno:collectingFromUser .&quot; ,
-                                 &quot;endring utført av skatteyteren i den preutfylte skattemeldingen&quot;@nb ;
+                                 &quot;endring utf&oslash;rt av skatteyteren i den preutfylte skattemeldingen&quot;@nb ;
                     skos:prefLabel &quot;collecting from the user&quot;@en ,
-                                   &quot;innhenting fra bruker&quot;@nb .
-
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi</pre>
+                                   &quot;innhenting fra bruker&quot;@nb .</pre>
 </body>
-
 </html>
