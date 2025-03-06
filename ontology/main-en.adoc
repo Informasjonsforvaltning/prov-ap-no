@@ -10,9 +10,9 @@ ifdef::backend-pdf[:toc: macro]
 :sectlinks:
 :table-stripes: odd
 :xrefstyle: full
-:title-logo-image: image:../docs/images/Digdir.png[alt="Digdir-logo", pdfwidth=30vw]
+:title-logo-image: image:../images/Digdir.png[alt="Digdir-logo", pdfwidth=30vw]
 
-image::../docs/images/Digdir.png[alt="Digdir-logo", width=30%, pdfwidth=30vw, link=https://digdir.no/]
+image::../images/Digdir.png[alt="Digdir-logo", width=30%, pdfwidth=30vw, link=https://digdir.no/]
 
 NOTE: The following is an HTML-view of the ontology `provno` expressed in RDF Turtle, which defines classes and properties specified in https://data.norge.no/specification/prov-ap-no[PROV-AP-NO &#x29C9;, window="_blank", role="ext-link"]. +
  +
