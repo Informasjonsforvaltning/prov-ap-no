@@ -14,7 +14,7 @@ ifdef::backend-pdf[:toc: macro]
 
 image::../images/Digdir.png[alt="Digdir-logo", width=30%, pdfwidth=30vw, link=https://digdir.no/]
 
-NOTE: Følgende er en html-visning av ontologien `provno` uttrykt i RDF Turtle, som definerer klasser og egenskaper spesifisert i https://data.norge.no/specification/PROV-AP-NO[PROV-AP-NO &#x29C9;, window="_blank", role="ext-link"] +
+NOTE: Følgende er en html-visning av ontologien `provno` uttrykt i RDF Turtle. +
  +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/PROV-AP-NO/issues[Github Issues &#x29C9;, window="_blank", role="ext-link"]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 
