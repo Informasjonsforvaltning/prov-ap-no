@@ -1,5 +1,9 @@
 name: Publish ontology to staging.fellesdatakatalog.digdir.no/vocabulary
 
+permissions:
+  contents: read
+  security-events: write
+
 on:
   push:
     branches:
