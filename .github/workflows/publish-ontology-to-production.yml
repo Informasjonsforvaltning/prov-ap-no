@@ -8,6 +8,9 @@ on:
       - ontology/**
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   test_uploading_of_file:
     name: Upload vocabulary to static-rdf-server
